@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CuencaData — Desarrollo de software a medida. Web, móvil, sistemas empresariales y más.">
+  <title>CuencaData — Software que transforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/estilos.css">
+  <link rel="stylesheet" href="/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       BARRA DE PROGRESO
+  ════════════════════════════════════════ -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVEGACIÓN
+  ════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo" aria-label="CuencaData inicio">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">CuencaData</span>
+      </a>
+
+      <button class="hamburguesa" id="btn-hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="menu-principal" class="nav-menu" role="list">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+        <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+        <li><a href="#clientes" class="nav-link">Clientes</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ════════════════════════════════════════ -->
+    <section id="inicio" class="hero" aria-label="Banner principal">
+      <!-- Cuadrícula de código animada (el elemento signature) -->
+      <div class="hero-grid" aria-hidden="true" id="hero-grid"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-eyebrow">Cuenca · Ecuador — Software Studio</span>
+        <h1 class="hero-titulo">
+          Construimos el<br>
+          <span class="hero-accent">software</span> que<br>
+          tu negocio necesita
+        </h1>
+        <p class="hero-subtitulo">
+          Desarrollo web, aplicaciones móviles y sistemas empresariales diseñados para escalar. Desde Cuenca para el mundo.
+        </p>
+        <div class="hero-acciones">
+          <a href="#contacto" class="btn btn-primario">Solicitar cotización</a>
+          <a href="#servicios" class="btn btn-secundario">Nuestros servicios</a>
+        </div>
+        <div class="hero-stats" aria-label="Estadísticas destacadas">
+          <div class="hero-stat">
+            <strong>50+</strong><span>Proyectos</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <strong>30+</strong><span>Clientes</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <strong>6+</strong><span>Años</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         NOSOTROS
+    ════════════════════════════════════════ -->
+    <section id="nosotros" class="seccion" aria-label="Sobre CuencaData">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label">Quiénes somos</span>
+          <h2 class="seccion-titulo">Software con propósito,<br>construido en Cuenca</h2>
+        </div>
+
+        <div class="nosotros-grid">
+          <div class="nosotros-texto reveal">
+            <p class="texto-lead">
+              Desde 2018, CuencaData ayuda a empresas ecuatorianas y latinoamericanas a transformar sus procesos con tecnología. No vendemos plantillas: construimos soluciones a medida que duran.
+            </p>
+            <p>
+              Nuestro equipo multidisciplinario combina diseño centrado en el usuario, arquitecturas robustas y entregas ágiles. Cada proyecto empieza con una pregunta simple: ¿qué problema real resuelve esto?
+            </p>
+          </div>
+
+          <div class="nosotros-cards">
+            <article class="valor-card reveal" style="--delay: 0s">
+              <div class="valor-icono" aria-hidden="true">🎯</div>
+              <h3>Misión</h3>
+              <p>Democratizar el acceso a software de calidad para empresas de todos los tamaños en Ecuador y la región.</p>
+            </article>
+            <article class="valor-card reveal" style="--delay: 0.1s">
+              <div class="valor-icono" aria-hidden="true">🔭</div>
+              <h3>Visión</h3>
+              <p>Ser el estudio de software de referencia del Ecuador, reconocido por la calidad técnica y el impacto en los negocios de nuestros clientes.</p>
+            </article>
+            <article class="valor-card reveal" style="--delay: 0.2s">
+              <div class="valor-icono" aria-hidden="true">⚡</div>
+              <h3>Innovación</h3>
+              <p>Adoptamos tecnologías emergentes con criterio, priorizando siempre lo que aporta valor real al producto final.</p>
+            </article>
+            <article class="valor-card reveal" style="--delay: 0.3s">
+              <div class="valor-icono" aria-hidden="true">🤝</div>
+              <h3>Confianza</h3>
+              <p>Comunicación transparente, plazos cumplidos y código que puedes auditar. Tu proyecto, siempre bajo tu control.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SERVICIOS
+    ════════════════════════════════════════ -->
+    <section id="servicios" class="seccion seccion-oscura" aria-label="Nuestros servicios">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label seccion-label-clara">Lo que hacemos</span>
+          <h2 class="seccion-titulo seccion-titulo-claro">Servicios</h2>
+        </div>
+
+        <div class="servicios-grid">
+
+          <article class="servicio-card reveal" style="--delay: 0s">
+            <div class="servicio-icono" aria-hidden="true">🌐</div>
+            <h3>Desarrollo Web</h3>
+            <p>Sitios corporativos, portales y plataformas web con rendimiento, seguridad y SEO desde el primer commit.</p>
+            <div class="servicio-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.05s">
+            <div class="servicio-icono" aria-hidden="true">🛒</div>
+            <h3>Tiendas Virtuales</h3>
+            <p>E-commerce a medida con pasarelas de pago locales, gestión de inventario y experiencia de compra optimizada.</p>
+            <div class="servicio-tags">
+              <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.1s">
+            <div class="servicio-icono" aria-hidden="true">📱</div>
+            <h3>Aplicaciones Móviles</h3>
+            <p>Apps nativas y multiplataforma para iOS y Android, con UI pulida y sincronización en tiempo real.</p>
+            <div class="servicio-tags">
+              <span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs REST</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.15s">
+            <div class="servicio-icono" aria-hidden="true">🏢</div>
+            <h3>Sistemas Empresariales</h3>
+            <p>ERP, CRM y sistemas de gestión internos que automatizan procesos y centralizan la información.</p>
+            <div class="servicio-tags">
+              <span class="tag">Spring Boot</span><span class="tag">Django</span><span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.2s">
+            <div class="servicio-icono" aria-hidden="true">🎨</div>
+            <h3>Diseño UX/UI</h3>
+            <p>Investigación de usuarios, wireframes, prototipos interactivos y sistemas de diseño documentados.</p>
+            <div class="servicio-tags">
+              <span class="tag">Figma</span><span class="tag">Design Systems</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.25s">
+            <div class="servicio-icono" aria-hidden="true">🗄️</div>
+            <h3>Bases de Datos</h3>
+            <p>Diseño, optimización y migración de bases de datos relacionales y NoSQL para alto rendimiento.</p>
+            <div class="servicio-tags">
+              <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.3s">
+            <div class="servicio-icono" aria-hidden="true">🔌</div>
+            <h3>APIs REST</h3>
+            <p>Diseño e implementación de APIs seguras, documentadas con OpenAPI y listas para integraciones.</p>
+            <div class="servicio-tags">
+              <span class="tag">REST</span><span class="tag">JWT</span><span class="tag">OpenAPI</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.35s">
+            <div class="servicio-icono" aria-hidden="true">🔧</div>
+            <h3>Mantenimiento Web</h3>
+            <p>Actualizaciones, monitoreo de uptime, parches de seguridad y soporte técnico continuo.</p>
+            <div class="servicio-tags">
+              <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.4s">
+            <div class="servicio-icono" aria-hidden="true">☁️</div>
+            <h3>Hosting y Dominio</h3>
+            <p>Configuración de servidores, certificados SSL, CDN y gestión de dominios .ec y globales.</p>
+            <div class="servicio-tags">
+              <span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">SSL</span>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" style="--delay: 0.45s">
+            <div class="servicio-icono" aria-hidden="true">📈</div>
+            <h3>SEO Técnico</h3>
+            <p>Auditorías de rendimiento, Core Web Vitals, estructura semántica y estrategia de contenidos.</p>
+            <div class="servicio-tags">
+              <span class="tag">SEO</span><span class="tag">Analytics</span><span class="tag">Performance</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PORTAFOLIO
+    ════════════════════════════════════════ -->
+    <section id="portafolio" class="seccion" aria-label="Portafolio de proyectos">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label">Proyectos destacados</span>
+          <h2 class="seccion-titulo">Portafolio</h2>
+        </div>
+
+        <!-- Filtros -->
+        <div class="portfolio-filtros reveal" role="group" aria-label="Filtrar proyectos">
+          <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+          <button class="filtro-btn" data-filtro="web">Web</button>
+          <button class="filtro-btn" data-filtro="movil">Móvil</button>
+          <button class="filtro-btn" data-filtro="sistema">Sistemas</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <article class="proyecto-card reveal" data-categoria="web">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #2563EB 0%, #38BDF8 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🏪</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">E-commerce</span>
+              <h3>MarketPlace Andino</h3>
+              <p class="proyecto-cliente">Cliente: Grupo Comercial Andes S.A.</p>
+              <div class="proyecto-tags">
+                <span class="tag">Laravel</span><span class="tag">Vue</span><span class="tag">MySQL</span>
+              </div>
+              <a href="/img/logo.png" class="btn btn-proyecto" aria-label="Ver proyecto MarketPlace Andino">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="proyecto-card reveal" data-categoria="sistema" style="--delay: 0.1s">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #0F172A 0%, #2563EB 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🏥</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">Sistema</span>
+              <h3>SaludTrack ERP</h3>
+              <p class="proyecto-cliente">Cliente: Red de Clínicas del Austro</p>
+              <div class="proyecto-tags">
+                <span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
+              </div>
+              <a href="#" class="btn btn-proyecto" aria-label="Ver proyecto SaludTrack ERP">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="proyecto-card reveal" data-categoria="movil" style="--delay: 0.2s">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #0EA5E9 0%, #6366F1 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🚌</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">App Móvil</span>
+              <h3>TransCuenca App</h3>
+              <p class="proyecto-cliente">Cliente: Municipio de Cuenca</p>
+              <div class="proyecto-tags">
+                <span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs REST</span>
+              </div>
+              <a href="#" class="btn btn-proyecto" aria-label="Ver proyecto TransCuenca App">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="proyecto-card reveal" data-categoria="web" style="--delay: 0.1s">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #059669 0%, #38BDF8 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🌿</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">Portal Web</span>
+              <h3>EcoAgro Digital</h3>
+              <p class="proyecto-cliente">Cliente: Cooperativa Agrícola del Sur</p>
+              <div class="proyecto-tags">
+                <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">SEO</span>
+              </div>
+              <a href="#" class="btn btn-proyecto" aria-label="Ver proyecto EcoAgro Digital">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="proyecto-card reveal" data-categoria="sistema" style="--delay: 0.2s">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🏛️</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">Sistema</span>
+              <h3>GovTrack Municipal</h3>
+              <p class="proyecto-cliente">Cliente: GAD Municipal Sigsig</p>
+              <div class="proyecto-tags">
+                <span class="tag">Spring Boot</span><span class="tag">Angular</span><span class="tag">MongoDB</span>
+              </div>
+              <a href="#" class="btn btn-proyecto" aria-label="Ver proyecto GovTrack Municipal">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="proyecto-card reveal" data-categoria="movil" style="--delay: 0.3s">
+            <div class="proyecto-img" style="background: linear-gradient(135deg, #DC2626 0%, #F59E0B 100%)">
+              <span class="proyecto-img-label" aria-hidden="true">🍽️</span>
+            </div>
+            <div class="proyecto-body">
+              <span class="proyecto-categoria">App Móvil</span>
+              <h3>Cuenca Gastro</h3>
+              <p class="proyecto-cliente">Cliente: Asociación de Restaurantes</p>
+              <div class="proyecto-tags">
+                <span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">APIs REST</span>
+              </div>
+              <a href="#" class="btn btn-proyecto" aria-label="Ver proyecto Cuenca Gastro">Ver proyecto →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ESTADÍSTICAS
+    ════════════════════════════════════════ -->
+    <section class="seccion-stats" aria-label="Estadísticas de CuencaData">
+      <div class="contenedor">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <strong class="stat-numero" data-target="30">0</strong>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+          <div class="stat-item reveal" style="--delay: 0.1s">
+            <strong class="stat-numero" data-target="52">0</strong>
+            <span class="stat-label">Proyectos realizados</span>
+          </div>
+          <div class="stat-item reveal" style="--delay: 0.2s">
+            <strong class="stat-numero" data-target="6">0</strong>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item reveal" style="--delay: 0.3s">
+            <strong class="stat-numero" data-target="18">0</strong>
+            <span class="stat-label">Tecnologías dominadas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TECNOLOGÍAS
+    ════════════════════════════════════════ -->
+    <section id="tecnologias" class="seccion" aria-label="Tecnologías que usamos">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label">Nuestro stack</span>
+          <h2 class="seccion-titulo">Tecnologías</h2>
+        </div>
+
+        <div class="tech-grupos">
+          <div class="tech-grupo reveal">
+            <h3 class="tech-grupo-titulo">Frontend</h3>
+            <div class="tech-grid">
+              <div class="tech-pill">HTML5</div>
+              <div class="tech-pill">CSS3</div>
+              <div class="tech-pill">JavaScript ES6</div>
+            </div>
+          </div>
+          <div class="tech-grupo reveal" style="--delay: 0.1s">
+            <h3 class="tech-grupo-titulo">Backend</h3>
+            <div class="tech-grid">
+              <div class="tech-pill">PHP</div>
+              <div class="tech-pill">Python</div>
+              <div class="tech-pill">Java</div>
+              <div class="tech-pill">Spring Boot</div>
+              <div class="tech-pill">Django</div>
+              <div class="tech-pill">Laravel</div>
+            </div>
+          </div>
+          <div class="tech-grupo reveal" style="--delay: 0.2s">
+            <h3 class="tech-grupo-titulo">Bases de datos</h3>
+            <div class="tech-grid">
+              <div class="tech-pill">MySQL</div>
+              <div class="tech-pill">PostgreSQL</div>
+              <div class="tech-pill">MongoDB</div>
+            </div>
+          </div>
+          <div class="tech-grupo reveal" style="--delay: 0.3s">
+            <h3 class="tech-grupo-titulo">DevOps & Herramientas</h3>
+            <div class="tech-grid">
+              <div class="tech-pill">Docker</div>
+              <div class="tech-pill">Git</div>
+              <div class="tech-pill">GitHub</div>
+              <div class="tech-pill">CI/CD</div>
+              <div class="tech-pill">Linux</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIOS
+    ════════════════════════════════════════ -->
+    <section id="clientes" class="seccion seccion-oscura" aria-label="Testimonios de clientes">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label seccion-label-clara">Lo que dicen de nosotros</span>
+          <h2 class="seccion-titulo seccion-titulo-claro">Clientes</h2>
+        </div>
+
+        <div class="carrusel-wrapper reveal" role="region" aria-label="Carrusel de testimonios" aria-live="polite">
+          <div class="carrusel-track" id="carrusel-track">
+
+            <article class="testimonio-card">
+              <div class="testimonio-estrellas" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>
+                "CuencaData transformó nuestro proceso de facturación. Lo que tardaba 3 horas ahora se hace en 10 minutos. El equipo siempre disponible y el código impecable."
+              </blockquote>
+              <footer class="testimonio-autor">
+                <div class="autor-avatar" aria-hidden="true">MR</div>
+                <div>
+                  <strong>María Rodríguez</strong>
+                  <span>CFO — Grupo Comercial Andes S.A.</span>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testimonio-card">
+              <div class="testimonio-estrellas" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>
+                "Entregaron el sistema hospitalario a tiempo y con cero bugs críticos al lanzamiento. Su metodología ágil y comunicación constante marcaron la diferencia."
+              </blockquote>
+              <footer class="testimonio-autor">
+                <div class="autor-avatar" aria-hidden="true">JP</div>
+                <div>
+                  <strong>Dr. Jorge Pacheco</strong>
+                  <span>Director TI — Red de Clínicas del Austro</span>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testimonio-card">
+              <div class="testimonio-estrellas" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>
+                "La app de transporte superó todas nuestras expectativas. Los ciudadanos la adoptan rápido y las quejas se redujeron un 60%. Profesionales de verdad."
+              </blockquote>
+              <footer class="testimonio-autor">
+                <div class="autor-avatar" aria-hidden="true">AM</div>
+                <div>
+                  <strong>Arq. Ana Molina</strong>
+                  <span>Directora de Movilidad — Municipio de Cuenca</span>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testimonio-card">
+              <div class="testimonio-estrellas" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>
+                "Llevaban nuestras ventas online de cero a $80K al mes en 6 meses. El e-commerce que construyeron es rápido, bonito y muy fácil de administrar."
+              </blockquote>
+              <footer class="testimonio-autor">
+                <div class="autor-avatar" aria-hidden="true">LT</div>
+                <div>
+                  <strong>Luis Torres</strong>
+                  <span>CEO — EcoAgro Digital</span>
+                </div>
+              </footer>
+            </article>
+
+          </div>
+
+          <div class="carrusel-controles" aria-label="Controles del carrusel">
+            <button class="carrusel-btn" id="prev-btn" aria-label="Testimonio anterior">‹</button>
+            <div class="carrusel-puntos" id="carrusel-puntos" role="tablist"></div>
+            <button class="carrusel-btn" id="next-btn" aria-label="Testimonio siguiente">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         BLOG
+    ════════════════════════════════════════ -->
+    <section id="blog" class="seccion" aria-label="Blog de CuencaData">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label">Últimos artículos</span>
+          <h2 class="seccion-titulo">Blog</h2>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-img blog-img-1" aria-hidden="true"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Arquitectura</span>
+              <h3><a href="#">Por qué adoptamos arquitectura hexagonal en todos nuestros proyectos</a></h3>
+              <p>Después de 3 años migrando sistemas legacy, aprendimos que la estructura del código determina su vida útil.</p>
+              <footer class="blog-footer">
+                <span>15 Jun 2025</span>
+                <span>·</span>
+                <span>8 min lectura</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="blog-card reveal" style="--delay: 0.1s">
+            <div class="blog-img blog-img-2" aria-hidden="true"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Performance</span>
+              <h3><a href="#">Core Web Vitals: cómo llevamos un sitio de 42 a 98 en PageSpeed</a></h3>
+              <p>Un caso real con técnicas concretas: lazy loading, critical CSS, preload y compresión de imágenes.</p>
+              <footer class="blog-footer">
+                <span>2 Jun 2025</span>
+                <span>·</span>
+                <span>6 min lectura</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="blog-card reveal" style="--delay: 0.2s">
+            <div class="blog-img blog-img-3" aria-hidden="true"></div>
+            <div class="blog-body">
+              <span class="blog-tag">Docker</span>
+              <h3><a href="#">Dockerizar Spring Boot + PostgreSQL en 15 minutos para producción</a></h3>
+              <p>Tutorial paso a paso que usamos internamente para onboarding de nuevos devs al equipo.</p>
+              <footer class="blog-footer">
+                <span>20 May 2025</span>
+                <span>·</span>
+                <span>10 min lectura</span>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACTO
+    ════════════════════════════════════════ -->
+    <section id="contacto" class="seccion seccion-oscura" aria-label="Formulario de contacto">
+      <div class="contenedor">
+        <div class="seccion-header reveal">
+          <span class="seccion-label seccion-label-clara">Hablemos</span>
+          <h2 class="seccion-titulo seccion-titulo-claro">Contacto</h2>
+          <p class="seccion-desc seccion-desc-clara">¿Tienes un proyecto en mente? Cuéntanos. Respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="contacto-grid">
+          <div class="contacto-info reveal">
+            <div class="info-item">
+              <span class="info-icono" aria-hidden="true">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <p>Av. Solano 8-45 y Av. 12 de Abril<br>Cuenca, Azuay — Ecuador</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icono" aria-hidden="true">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+593 98 765 4321<br>+593 7 283 1000</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icono" aria-hidden="true">✉️</span>
+              <div>
+                <strong>Correo</strong>
+                <p>hola@cuencadata.ec<br>soporte@cuencadata.ec</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icono" aria-hidden="true">🕐</span>
+              <div>
+                <strong>Horarios</strong>
+                <p>Lunes — Viernes: 8:00 — 18:00<br>Sábado: 9:00 — 13:00</p>
+              </div>
+            </div>
+
+            <!-- Mapa embed -->
+            <div class="mapa-wrapper" aria-label="Mapa de ubicación">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-78.9970%2C-2.9100%2C-78.9750%2C-2.8900&layer=mapnik&marker=-2.9003%2C-78.9860"
+                title="Ubicación de CuencaData en Cuenca, Ecuador"
+                loading="lazy"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <form class="contacto-form reveal" id="form-contacto" novalidate aria-label="Formulario de contacto">
+            <div class="form-row">
+              <div class="form-grupo">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+                <span class="form-error" id="error-nombre" role="alert"></span>
+              </div>
+              <div class="form-grupo">
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@empresa.com" required autocomplete="email">
+                <span class="form-error" id="error-correo" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-grupo">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization">
+              </div>
+              <div class="form-grupo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+593 9..." autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-grupo">
+              <label for="servicio">Servicio requerido *</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio…</option>
+                <option value="web">Desarrollo Web</option>
+                <option value="ecommerce">Tienda Virtual</option>
+                <option value="movil">Aplicación Móvil</option>
+                <option value="sistema">Sistema Empresarial</option>
+                <option value="ux">Diseño UX/UI</option>
+                <option value="api">API REST</option>
+                <option value="seo">SEO Técnico</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="form-error" id="error-servicio" role="alert"></span>
+            </div>
+            <div class="form-grupo">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto, objetivos y plazos…" required></textarea>
+              <span class="form-error" id="error-mensaje" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primario btn-full">Enviar mensaje →</button>
+            <p class="form-nota" id="form-respuesta" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo" aria-label="CuencaData inicio">
+            <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="logo-text">CuencaData</span>
+          </a>
+          <p>Software que transforma negocios. Desde Cuenca para el mundo.</p>
+          <div class="footer-redes" aria-label="Redes sociales">
+            <a href="#" aria-label="LinkedIn" class="red-social">in</a>
+            <a href="#" aria-label="GitHub" class="red-social">gh</a>
+            <a href="#" aria-label="Twitter/X" class="red-social">𝕏</a>
+            <a href="#" aria-label="Instagram" class="red-social">ig</a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Servicios">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Desarrollo Web</a></li>
+            <li><a href="#servicios">Apps Móviles</a></li>
+            <li><a href="#servicios">Sistemas ERP</a></li>
+            <li><a href="#servicios">Diseño UX/UI</a></li>
+            <li><a href="#servicios">SEO Técnico</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Empresa">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <address>
+            <p>📍 Cuenca, Azuay — Ecuador</p>
+            <p>📞 +593 99 810 9019</p>
+            <p>✉️ wilson.tobar.2026@gmail.com</p>
+            <p>🕐 Lun–Vie 8:00–18:00</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CuencaData. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       BOTONES FLOTANTES
+  ════════════════════════════════════════ -->
+  <a id="btn-whatsapp" class="btn-flotante btn-whatsapp" aria-label="WhatsApp" title="Escríbenos por WhatsApp" href="https://wa.me/593998109019" target="_blank" rel="noopener noreferrer">
+    <!-- <span aria-hidden="true">💬</span> -->
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button id="btn-top" class="btn-flotante btn-top" aria-label="Volver al inicio" title="Volver arriba">↑</button>
+<!--
+
+
+  <div class="accesibilidad-wrapper" role="complementary" aria-label="Panel de accesibilidad">
+    <button id="btn-accesibilidad" class="btn-flotante btn-accesibilidad" aria-label="Opciones de accesibilidad" aria-expanded="false" aria-controls="panel-accesibilidad">
+      <span aria-hidden="true">♿</span>
+    </button>
+    <div id="panel-accesibilidad" class="panel-accesibilidad" hidden>
+      <h3>Accesibilidad</h3>
+      <button class="acc-btn" id="btn-contraste" aria-pressed="false">
+        <span aria-hidden="true">◐</span> Alto contraste
+      </button>
+      <div class="acc-fuente" aria-label="Tamaño de fuente">
+        <span class="acc-label">Tamaño de fuente</span>
+        <div class="acc-fuente-controles">
+          <button class="acc-btn acc-btn-sm" id="btn-fuente-menos" aria-label="Reducir fuente">A−</button>
+          <button class="acc-btn acc-btn-sm" id="btn-fuente-reset" aria-label="Restaurar fuente">A</button>
+          <button class="acc-btn acc-btn-sm" id="btn-fuente-mas" aria-label="Aumentar fuente">A+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <script src="/script.js"></script>
+</body>
+</html>

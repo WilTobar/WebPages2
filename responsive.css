@@ -1,0 +1,188 @@
+/* ═══════════════════════════════════════════════════════
+   CuencaData — responsive.css
+   Breakpoints: tablet (≤900px) · móvil (≤600px)
+   ═══════════════════════════════════════════════════════ */
+
+/* ──────────────────────────────────────────
+   TABLET (≤ 900px)
+────────────────────────────────────────── */
+@media (max-width: 900px) {
+
+  /* Navegación */
+  .hamburguesa { display: flex; }
+
+  .nav-menu {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 14, 26, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+  }
+  .nav-menu.active { transform: translateX(0); }
+
+  .nav-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+  }
+  .nav-cta {
+    font-size: 1rem !important;
+    padding: 12px 32px !important;
+    margin-top: 8px;
+  }
+
+  /* Nosotros */
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  /* Portafolio */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contacto */
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-brand { grid-column: 1 / -1; }
+
+  /* Tecnologías */
+  .tech-grupos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ──────────────────────────────────────────
+   MÓVIL (≤ 600px)
+────────────────────────────────────────── */
+@media (max-width: 600px) {
+
+  /* Hero */
+  .hero-acciones {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-acciones .btn { width: 100%; justify-content: center; }
+
+  .hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Nosotros cards */
+  .nosotros-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Servicios */
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Portafolio */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Formulario */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonios */
+  .testimonio-card {
+    padding: 32px 20px;
+  }
+  .testimonio-card blockquote {
+    font-size: 1.15rem;
+  }
+  .carrusel-controles {
+    padding: 0 20px 8px;
+  }
+
+  /* Blog */
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tecnologías */
+  .tech-grupos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* Botones flotantes */
+  .btn-flotante {
+    right: 16px;
+    width: 44px; height: 44px;
+  }
+  .btn-top { bottom: 76px; }
+  .btn-whatsapp { right: 16px; bottom: 134px; }
+
+  .accesibilidad-wrapper { bottom: 16px; right: 16px; }
+  .panel-accesibilidad { min-width: 190px; }
+
+  /* Portfolio filtros */
+  .portfolio-filtros { gap: 8px; }
+  .filtro-btn { padding: 6px 14px; font-size: 0.8rem; }
+}
+
+/* ──────────────────────────────────────────
+   EXTRA PEQUEÑO (≤ 380px)
+────────────────────────────────────────── */
+@media (max-width: 380px) {
+  .hero-stat { display: none; }
+  .hero-stat:first-child { display: flex; }
+  .hero-stats .hero-stat-divider { display: none; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-numero { font-size: 2.5rem; }
+}
+
+/* ──────────────────────────────────────────
+   PRINT (básico)
+────────────────────────────────────────── */
+@media print {
+  #navbar, .btn-flotante, .accesibilidad-wrapper, #progress-bar,
+  .hero-grid, .hero-overlay { display: none !important; }
+  .hero-content { padding-top: 20px; }
+  body { color: #000; background: #fff; }
+  a { color: #000; }
+}
